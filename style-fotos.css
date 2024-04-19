@@ -1,0 +1,157 @@
+* {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+header { /* tag pai da parte superior do site*/
+    display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes */
+    width: 100%; /* largura de 100% */ 
+    height: 150px; /*  altura de do header*/
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+  }
+  
+  .titulo-personagens { /* class para manipular o titulo principal*/
+    text-shadow: 2px 2px 2px red;
+    width: 100%; /*largura do titulo  de 100% */ 
+    height: 30px; /* altura do titulo*/
+    font-size: 40px; /*tamanho da fonte do titulo */
+    font-family: Arial, Helvetica, sans-serif;  /* tipo de font do titulo */
+    color: rgb(249, 252, 253); /*cor das letras do titulo */
+    margin-top: 15px; /* afastamento da parte superior do site */
+   
+  
+    
+  }
+  
+  .logo-fotos { /* class da logo das fotos*/
+    margin-left: 30px; /* afastamento a esquerda da logo da ponta da tela*/
+    width: 200px; /* largura da logo */
+    height: auto; /* altura automatica do logo */
+  }
+
+  .actor-cards-container { /* class principal dos cards */
+    width: 100%; /* largura de ocupação dos cards */
+    display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes */
+    justify-content: center; /*alinha orizontamente*/
+    margin-top: 50px; /* afasta 50px do item acima */
+  }
+  
+  .cards-content { /* class para o alinhamento dos cards*/
+    width: 90%; /* largura de ocupação dos cards*/
+    display: grid; /* para organizar os cards em colunas */
+    grid-template-columns: repeat(3, 5fr); /* para ditar a forma de organização das colunas, nesse caso ta: 3 vertcalmente e 5 horizontal */
+    row-gap: 50px; /* afastamente entre os cards de baixo*/
+    column-gap: 40px; /*afastamento lateral das colunas */
+  }
+  
+  .card { /* class para a manipulação dos cards */
+    width: 100%; /* largura dos cards */
+    height: 600px; /* altura dos cards */
+    background-size: cover; /* fazer a imagem ocupar 100% do card */
+    background-position: 50% 50%; /*  posição dos cards*/
+    border-radius: 5px; /* aredondamento da borda */
+    cursor: pointer; /* torna um link*/
+    transition: 1s; /* transição de 1s */
+    display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes*/
+    flex-direction: column; /*  organizar em co*/
+    justify-content: flex-end; /* alinha o texto dos cara no final do card */
+    position: 0 0 20px 10px; /* posição do texto dos cards */
+    font-size: 37px;  /* tamanho ada font do texto do card */
+    color: rgba(227, 231, 228, 0.993); /* cor do texto  do card */ 
+    align-items: center;/* alinha os intens verticamente */
+    text-shadow: 2px 2px 2px red;
+  }
+
+  .banner-1{ /* class para adicionar a imagem do banner separadamente */
+   background-image: url("https://62690.cdn.lojaquevende.com.br/static/62690/sku/quadros-quadro-luffy--p-1650639784444.jpg"); /* para exporta a imagem da internet */
+  }
+
+  .banner-2 {
+    background-image: url("https://img.cdn-pictorem.com/uploads/collection/E/EF5MND10RMF/900_Coolbits-Art_zore22.jpg");
+  }
+
+  .banner-3 {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9d67ab2-56fc-4222-bd16-cc76f5bd7f6b/dfceyww-4aff29e3-442c-4008-900b-1255f6638f97.png/v1/fit/w_375,h_458/sanji_render_4_by_akatsukiannie_dfceyww-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzg2IiwicGF0aCI6IlwvZlwvYjlkNjdhYjItNTZmYy00MjIyLWJkMTYtY2M3NmY1YmQ3ZjZiXC9kZmNleXd3LTRhZmYyOWUzLTQ0MmMtNDAwOC05MDBiLTEyNTVmNjYzOGY5Ny5wbmciLCJ3aWR0aCI6Ijw9NjQzIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.XW49hpMG48YTdwlIVTex665MTL6rOzWv7fUaRkXqxdc");
+  }
+
+  .banner-4 {
+    background-image: url("https://sm.ign.com/ign_br/screenshot/default/1-nicorobinfull2957208_x6zk.jpg");
+  }
+
+  .banner-5 {
+    background-image: url("https://openseauserdata.com/files/46c4207a2c20e03cbe042b4214177a0e.jpg");
+  }
+
+  .banner-6 {
+    background-image: url("https://onepiece.b-cdn.net/wp-content/uploads/2023/02/flat750x075f-pad750x1000f8f-7.jpg");
+  }
+
+  .banner-7 {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bd62e10-f008-40fc-9039-ba3b488e61ab/dg5f5q8-56867737-2432-470e-b4bd-e392ade4514e.png/v1/fit/w_375,h_563,q_70,strp/onigashima_outfit_nami__one_piece__ai_image_by_hydrosai_dg5f5q8-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Mjg4MCIsInBhdGgiOiJcL2ZcLzRiZDYyZTEwLWYwMDgtNDBmYy05MDM5LWJhM2I0ODhlNjFhYlwvZGc1ZjVxOC01Njg2NzczNy0yNDMyLTQ3MGUtYjRiZC1lMzkyYWRlNDUxNGUucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.K9c-Sy3O7CFd1P1FeSZy0fcnhFZuY0pzqFdpFOdN7Qk");
+  }
+
+.banner-8 {
+  background-image: url("https://i.pinimg.com/originals/47/68/b1/4768b15cbf3aaffc73f1c5a8d82a081e.jpg");
+}
+
+.banner-9 {
+    background-image: url("https://pm1.aminoapps.com/6355/2616293c77c68ddf6ce20ac51b1547589ee37d2a_hq.jpg");
+}
+@media (min-width:768px) {
+ 
+  .button{
+    width: 40%;
+    display: none;
+  }
+}
+@media (max-width:768px) {
+
+  header{
+   margin-left: 0%;
+  }
+
+  .titulo-personagens {
+    color: aliceblue;
+    width: 90%;
+    height:55px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px red;
+    
+  }
+
+  .logo-fotos {
+    width: 125px;
+  }
+ 
+
+  .content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+  
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    
+  }
+  .button {
+    text-shadow: 2px 2px 2px red;
+    margin-left: 100px;
+    width: 60%;
+    height:100px;
+    margin-top: 30px;
+    font-size: 30px;
+    border: solid 2px rgb(255, 255, 255);
+    color: aliceblue;
+  }
+  
+}
+

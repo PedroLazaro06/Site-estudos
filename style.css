@@ -1,0 +1,258 @@
+* {
+  /* formatação reset para todo o site */
+  margin: 0; /* sem afastamento das bordas dos itens */
+  padding: 0; /* sem afastamento dos itens filhos do pai */
+  background-color: black; /* bota fundo preto em todo site */
+  list-style: none; /* */
+  text-decoration: none; /* */
+}
+body {
+  /* tag de todos os itens que podem ser vistos*/
+  height: 400vh; /* adicionar scroll horizontal */
+}
+
+header {
+  /* tag da parte superior do site */
+  height: 90px; /* altura da parte supeior */
+  display: flex; /*organizar as tag filho de forma automatica e permite usar as suas opçoes */
+  align-items: center; /* alinha os itens verticalmente */
+  justify-content: space-around; /* alinha os itens de forma horizontal  */
+}
+
+nav {
+  /* tag de navegação*/
+  width: 60%; /* largura da navegação*/
+}
+
+ul {
+  /* tag de lista não ordenada*/
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes*/
+  width: 100%; /* lagura da lista não ordenada */
+  justify-content: space-between; /* afastamento total dos itens */
+}
+
+li {
+  /* tag lista */
+  list-style: none; /* remove o marcador padrao dos itens da lista*/
+  color: aliceblue; /* cor das letras dos itens da lista */
+  cursor: pointer; /* transformar os itens em links */
+  font-size: 35px; /*tamanho da font dos itens de navegação */
+  transition: 0.5s; /* tempo de transcição quando o mouse passar*/
+  text-shadow: 3px 3px 3px red;
+}
+
+li:hover {
+  /*tag de animação da troca de dor */
+  color: red; /*mudar a cor para red quando mouse pasar por cima */
+}
+
+#logo {
+  /* id da logo da parte superior*/
+  width: 70px; /*largura da logo da parte superior  */
+  height: auto; /* altura automatica da logo*/
+}
+
+#banner {
+  /* class do banner principal */
+  background-image: url("./arquivos/banneer1.jpg"); /* responsvel por exportar o banner da internet*/
+  background-position: 50% 50%; /* posição do banner*/
+  background-size: cover; /* faz a imagem ocupar toda a div atribuida */
+  width: 100%; /* largura da imagem banner*/
+  height: 600px; /* altura da imagem banner*/
+}
+
+#trailer-container {
+  /*class principal dos itens  */
+  width: 100%; /* largura que os itens vao ocupar*/
+  height: 500px; /* altura dos itens */
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes */
+  justify-content: center; /* alinha os itens de forma horizontal*/
+  margin-top: 70px; /* distanciamento do top*/
+  margin-left: 30px; /* distanciamento a esquerda */
+  
+}
+
+.content {
+  /* class responsavel por manipular os itens  */
+  width: 60%; /* largura que os itens */
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes */
+  align-items: center; /* alinha os itens verticalmente*/
+  justify-content: space-between; /* afastamente total dos itens */
+  
+}
+
+.trailer {
+  /* class para manipular o trailer*/
+  width: 50%; /* largura do video */
+
+}
+
+#sinopse {
+  /* class que manipular a sinopse*/
+  width: 50%; /* largura da sinpse */
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes*/
+  flex-direction: column; /*distribui o texto em coluna */
+  justify-content: space-between; /* afastamento total dos itens  */
+  margin-left: 30px; /* afastamento a esquerda */
+  
+}
+
+.description {
+  /* id para manipular o texto da discrição da sinpse*/
+  color: #ffff; /* cor do texto da descrição */
+  font-size: 19px; /*tamanho do texto da descrição */
+  width: 200px; /* largura da descrição*/
+ 
+}
+
+.button {
+  /* class para manipular o botton*/
+  width: 200px; /* largura do botão */
+  height: 60px; /* altura do botão */
+  background-color: red; /* cor de fundo do botao */
+  color: white; /* cor da letra do botao */
+  padding: 8px 10px; /* afastamento da letra de dentro do botao da borda do mesmo */
+  border-radius: 5px; /* arredondamento da borda do bottao */
+  cursor: pointer; /* transforma em link */
+  transition: 0.8s; /* tempo de animação do botao */
+  font-size: 18px; /*  tamanho da fonte do botao*/
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes*/
+  justify-content: center; /* alinha os itens verticalmente */
+  align-items: center; /*  alinha os itene horizontalmente*/
+  font-weight: bold; /* */
+  border: none; /* remover a borda padrao*/
+  outline: none; /* remover o comportamento padrao */
+  margin-top: 25px; /* afastamento do item de cima*/
+}
+
+.button:hover {
+  /* responsavel pela animação */
+  background-color: black; /* cor quando o botão for apertado ou passar o mouse */
+}
+
+.actor-cards-container {
+  /* class principal dos cards */
+  width: 100%; /* largura de ocupação dos cards */
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes */
+  justify-content: center; /*alinha orizontamente*/
+  margin-top: 50px; /* afasta 50px do item acima */
+  
+}
+
+.cards-content {
+  /* class para o alinhamento dos cards*/
+  width: 90%; /* largura de ocupação dos cards*/
+  display: grid; /* para organizar os cards em colunas */
+  grid-template-columns: repeat(
+    3,
+    5fr
+  ); /* para ditar a forma de organização das colunas, nesse caso ta: 3 vertcalmente e 5 horizontal */
+  row-gap: 50px; /* afastamente entre os cards de baixo*/
+  column-gap: 40px; /*afastamento lateral das colunas */
+}
+
+.card {
+  /* class para a manipulação dos cards */
+  width: 100%; /* largura dos cards */
+  height: 600px; /* altura dos cards */
+  background-size: cover; /* fazer a imagem ocupar 100% do card */
+  background-position: 50% 50%; /*  posição dos cards*/
+  border-radius: 5px; /* aredondamento da borda */
+  cursor: pointer; /* torna um link*/
+  transition: 1s; /* transição de 1s */
+  display: flex; /* organizar as tag filho de forma automatica e permite usar as suas opçoes*/
+  flex-direction: column; /*  organizar em co*/
+  justify-content: flex-end; /* alinha o texto dos cara no final do card */
+  position: 0 0 20px 10px; /* posição do texto dos cards */
+  font-size: 37px; /* tamanho da font do texto do card */
+  color: rgba(227, 231, 228, 0.993); /* cor do texto  do card */
+  align-items: center; /* alinha os itens verticamente */
+  text-shadow: 3px 3px 3px red ;
+}
+
+.banner-1 {
+  background-image: url("https://62690.cdn.lojaquevende.com.br/static/62690/sku/quadros-quadro-luffy--p-1650639784444.jpg");
+}
+.banner-2 {
+  background-image: url("https://img.cdn-pictorem.com/uploads/collection/E/EF5MND10RMF/900_Coolbits-Art_zore22.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9d67ab2-56fc-4222-bd16-cc76f5bd7f6b/dfceyww-4aff29e3-442c-4008-900b-1255f6638f97.png/v1/fit/w_375,h_458/sanji_render_4_by_akatsukiannie_dfceyww-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzg2IiwicGF0aCI6IlwvZlwvYjlkNjdhYjItNTZmYy00MjIyLWJkMTYtY2M3NmY1YmQ3ZjZiXC9kZmNleXd3LTRhZmYyOWUzLTQ0MmMtNDAwOC05MDBiLTEyNTVmNjYzOGY5Ny5wbmciLCJ3aWR0aCI6Ijw9NjQzIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.XW49hpMG48YTdwlIVTex665MTL6rOzWv7fUaRkXqxdc");
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: white;
+}
+
+.footer-navigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #banner {
+    background-position: 40%;
+    background-image: url("https://i.pinimg.com/236x/69/fd/ac/69fdace8fb9b30b5acacbdca897f1da7.jpg");
+  }
+
+  #trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer {
+    width: 100%;
+  }
+
+  #sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+}

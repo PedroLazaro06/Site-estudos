@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>site one piece</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./arquivos/logo_one_piece-removebg-preview.png" /> <!--para idicionar a img de logo-->
+      <nav> <!--tag de navegação-->
+        <ul> <!--lista não ordenada-->
+          <a href="./index.html"> <!--usado para vincular a pagina com o endereço desejado-->
+            <li>home</li> <!--adicionar o nome do item-->
+          </a>
+
+          <a href="./fotos.html">
+            <li>fotos</li>
+          </a>
+
+          <a href="https://www.instagram.com/lazarodanttas/">
+            <li>contato</li>
+          </a>
+
+          <a href="./comentarios.html">
+            <li>comentarios</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div id="banner"></div> <!--adicionar o banner principal-->
+    <div id="trailer-container"> <!--adicionar os item -->
+      <div class="content"> <!--onde vai ser adicionado o conteudo-->
+        <video controls class="trailer"> <!--manipulção  o video-->
+          <source src="./arquivos/trailler one piece.mp4" type="video/mp4" /> <!--inserir o video-->
+        </video>
+        <div id="sinopse"> <!--manipulação da sinopse-->
+          <p class="description"> <!--onde vai ser inserido a descrição-->
+            One Piece (ワンピース Wan Pīsu) é uma série de mangá escrita e
+            ilustrada por Eiichiro Oda. Os capítulos têm sido serializados na
+            revista Weekly Shōnen Jump desde julho de 1997, com os capítulos
+            compilados e publicados em 106 volumes tankōbon pela editora
+            Shueisha até junho de 2023.
+          </p>
+          <a href="https://animesonlinecc.to/anime/one-piece/">
+            <button class="button">assista ao anime</button> <!--onde vai ser adicionado o button e ser manipulado-->
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-cards-container"> <!--div principal dos containers-->
+      <div class="cards-content"> <!--para a manipulação dos cards-->
+        <div class="card banner-1">Monkey D. Luffy</div> <!-- cards separados, para cada um ter uma imagem e receber a mesma manipulação-->
+        <div class="card banner-2">Roronoa Zoro</div>
+        <div class="card banner-3">Vinsmoke Sanji</div>
+      </div>
+    </div>
+    <footer>
+      <img style="object-fit: contain;" id="logo" src="./arquivos/logo_one_piece-removebg-preview.png"> <!--logo do foorter-->
+      <span>todos os direitos reservados @</span> <!--direitos reservados-->
+      <span>Desenvolvido por: Pedro lazaro</span> <!--adicionar o responsavel pelo site-->
+
+      <nav class="footer-navigation"> <!--nav para a versão mobile-->
+        <ul class="footer-list">
+          <a href="./index.html">
+            <li>home</li>
+          </a>
+
+          <a href="./fotos.html">
+            <li>fotos</li>
+          </a>
+
+          <a href="./contato.html">
+            <li>contato</li>
+          </a>
+
+          <a href="./comentarios.html">
+            <li>comentarios</li>
+          </a>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
